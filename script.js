@@ -1,0 +1,1 @@
+// placeholder for interactivity JS (ratings, modals, etc.)
