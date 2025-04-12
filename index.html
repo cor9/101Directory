@@ -1,86 +1,112 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Child Actor 101 Directory</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Actor 101 Directory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    .listing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .transition-all {
+      transition: all 0.3s ease;
+    }
+    .stripe-btn {
+      background: #635bff;
+    }
+    .stripe-btn:hover {
+      background: #4a42d4;
+    }
+    .star-rating .star {
+      color: #d1d5db;
+    }
+    .star-rating .star.active {
+      color: #f59e0b;
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
-<div class="text-center py-10 px-4 max-w-3xl mx-auto">
-<h1 class="text-4xl font-bold text-indigo-600 mb-4">Child Actor 101 Directory</h1>
-<p class="mb-6 text-lg text-gray-700">Find trusted, vetted resources for your young performer.</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-<a class="bg-indigo-600 text-white px-6 py-3 rounded shadow hover:bg-indigo-700 transition" href="#">Browse Directory</a>
-<a class="bg-white border border-indigo-600 text-indigo-600 px-6 py-3 rounded shadow hover:bg-indigo-50 transition" href="#">Claim Your Listing (Free)</a>
-</div>
-<p class="mb-6 text-sm text-green-700 font-medium">* Launch pricing available for a limited time only</p>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
-<!-- Basic -->
-<div class="bg-white p-6 rounded shadow border">
-<h3 class="text-xl font-semibold mb-1">Basic</h3>
-<p class="text-sm text-gray-500 line-through">$19/mo</p>
-<p class="text-sm text-gray-500 mb-2">14-day free trial</p>
-<p class="text-2xl font-bold text-green-600 mb-4">$12<span class="text-base font-normal">/mo (launch)</span></p>
-<ul class="text-sm space-y-1 mb-4 text-gray-700">
-<li>• 1 active listing</li>
-<li>• Basic profile</li>
-<li>• Contact form</li>
-<li>• Basic analytics</li>
-</ul>
-<a href="https://buy.stripe.com/fZeaEO39f6JS7sI147" target="_blank" rel="noopener" class="w-full block text-center bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
-  Start 14-Day Free Trial
-</a>
-</div>
-<!-- Pro -->
-<div class="bg-white p-6 rounded shadow border">
-<h3 class="text-xl font-semibold mb-1">Pro</h3>
-<p class="text-sm text-gray-500 line-through">$49/mo</p>
-<p class="text-sm text-gray-500 mb-2">14-day free trial</p>
-<p class="text-2xl font-bold text-green-600 mb-4">$29<span class="text-base font-normal">/mo (launch)</span></p>
-<ul class="text-sm space-y-1 mb-4 text-gray-700">
-<li>• 3 listings</li>
-<li>• Enhanced profile</li>
-<li>• Photo gallery</li>
-<li>• Video embed</li>
-</ul>
-<a href="https://buy.stripe.com/4gw3cmeRX9W46oE002" target="_blank" rel="noopener" class="w-full block text-center bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
-  Start 14-Day Free Trial
-</a>
-</div>
-<!-- Premium -->
-<div class="bg-white p-6 rounded shadow border">
-<h3 class="text-xl font-semibold mb-1">Premium</h3>
-<p class="text-sm text-gray-500 line-through">$99/mo</p>
-<p class="text-sm text-gray-500 mb-2">14-day free trial</p>
-<p class="text-2xl font-bold text-green-600 mb-4">$59<span class="text-base font-normal">/mo (launch)</span></p>
-<ul class="text-sm space-y-1 mb-4 text-gray-700">
-<li>• 10 listings</li>
-<li>• Featured placement</li>
-<li>• Premium profile</li>
-<li>• Support + Reports</li>
-</ul>
-<a href="https://buy.stripe.com/28o6oy8tzgks28odQR" target="_blank" rel="noopener" class="w-full block text-center bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
-  Start 14-Day Free Trial
-</a>
-</div>
-<!-- 101 Add-On -->
-<div class="bg-white p-6 rounded shadow border border-indigo-500">
-<h3 class="text-xl font-semibold text-indigo-600 mb-1">101 Add-On</h3>
-<p class="text-sm text-gray-500 line-through">$49/mo</p>
-<p class="text-xl text-green-600 font-bold mb-4">$35<span class="text-base font-normal">/mo (launch)</span></p>
-<ul class="text-sm space-y-1 mb-4 text-gray-700">
-<li>• “101 Approved” badge</li>
-<li>• Home page feature</li>
-<li>• Priority visibility</li>
-</ul>
-<a href="https://buy.stripe.com/eVa14edNT7NW00gdQU" target="_blank" rel="noopener" class="w-full block text-center bg-indigo-700 text-white py-2 rounded hover:bg-indigo-800 transition">
-  Add 101 Approved – $35 Launch Price
-</a>
-</div>
-</div>
-</div>
+  <div class="text-center py-10 px-4 max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold text-indigo-600 mb-4">Child Actor 101 Directory</h1>
+    <p class="mb-6 text-lg text-gray-700">Find trusted, vetted resources for your young performer.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+      <a class="bg-indigo-600 text-white px-6 py-3 rounded shadow hover:bg-indigo-700 transition" href="#">Browse Directory</a>
+      <a class="bg-white border border-indigo-600 text-indigo-600 px-6 py-3 rounded shadow hover:bg-indigo-50 transition" href="#">Claim Your Listing (Free)</a>
+    </div>
+    <p class="mb-6 text-sm text-green-700 font-medium">* Launch pricing available for a limited time only</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+      <!-- Basic -->
+      <div class="bg-white p-6 rounded shadow border">
+        <h3 class="text-xl font-semibold mb-1">Basic</h3>
+        <p class="text-sm text-gray-500 line-through">$19/mo</p>
+        <p class="text-sm text-gray-500 mb-2">14-day free trial</p>
+        <p class="text-2xl font-bold text-green-600 mb-4">$12<span class="text-base font-normal">/mo (launch)</span></p>
+        <ul class="text-sm space-y-1 mb-4 text-gray-700">
+          <li>• 1 active listing</li>
+          <li>• Basic profile</li>
+          <li>• Contact form</li>
+          <li>• Basic analytics</li>
+        </ul>
+        <a href="https://buy.stripe.com/fZeaEO39f6JS7sI147" target="_blank" rel="noopener" class="w-full block text-center bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+          Start 14-Day Free Trial
+        </a>
+      </div>
+
+      <!-- Pro -->
+      <div class="bg-white p-6 rounded shadow border">
+        <h3 class="text-xl font-semibold mb-1">Pro</h3>
+        <p class="text-sm text-gray-500 line-through">$49/mo</p>
+        <p class="text-sm text-gray-500 mb-2">14-day free trial</p>
+        <p class="text-2xl font-bold text-green-600 mb-4">$29<span class="text-base font-normal">/mo (launch)</span></p>
+        <ul class="text-sm space-y-1 mb-4 text-gray-700">
+          <li>• 3 listings</li>
+          <li>• Enhanced profile</li>
+          <li>• Photo gallery</li>
+          <li>• Video embed</li>
+        </ul>
+        <a href="https://buy.stripe.com/4gw3cmeRX9W46oE002" target="_blank" rel="noopener" class="w-full block text-center bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+          Start 14-Day Free Trial
+        </a>
+      </div>
+
+      <!-- Premium -->
+      <div class="bg-white p-6 rounded shadow border">
+        <h3 class="text-xl font-semibold mb-1">Premium</h3>
+        <p class="text-sm text-gray-500 line-through">$99/mo</p>
+        <p class="text-sm text-gray-500 mb-2">14-day free trial</p>
+        <p class="text-2xl font-bold text-green-600 mb-4">$59<span class="text-base font-normal">/mo (launch)</span></p>
+        <ul class="text-sm space-y-1 mb-4 text-gray-700">
+          <li>• 10 listings</li>
+          <li>• Featured placement</li>
+          <li>• Premium profile</li>
+          <li>• Support + Reports</li>
+        </ul>
+        <a href="https://buy.stripe.com/28o6oy8tzgks28odQR" target="_blank" rel="noopener" class="w-full block text-center bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+          Start 14-Day Free Trial
+        </a>
+      </div>
+
+      <!-- 101 Add-On -->
+      <div class="bg-white p-6 rounded shadow border border-indigo-500">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-1">101 Add-On</h3>
+        <p class="text-sm text-gray-500 line-through">$49/mo</p>
+        <p class="text-xl text-green-600 font-bold mb-4">$35<span class="text-base font-normal">/mo (launch)</span></p>
+        <ul class="text-sm space-y-1 mb-4 text-gray-700">
+          <li>• “101 Approved” badge</li>
+          <li>• Home page feature</li>
+          <li>• Priority visibility</li>
+        </ul>
+        <a href="https://buy.stripe.com/eVa14edNT7NW00gdQU" target="_blank" rel="noopener" class="w-full block text-center bg-indigo-700 text-white py-2 rounded hover:bg-indigo-800 transition">
+          Add 101 Approved – $35 Launch Price
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
